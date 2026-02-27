@@ -37,7 +37,7 @@
 
 GitHub Actions 会自动加载你设置在 **Secrets** 中的环境变量，你可以在 `.yaml` 文件中通过 `${{ secrets.<secret_name> }}` 的方式引用这些环境变量。
 
-#### 如果需要添加更多账户请手动修改.github/workflows/69yuncheckin.yaml文件的如下内容
+#### 如果需要添加更多账户请手动修改.github/workflows/turboviewcheckin.yaml文件的如下内容
 
 ```yaml
 jobs:
