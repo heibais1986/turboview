@@ -28,11 +28,11 @@ def fetch_and_extract_info(domain,headers, params):
     transfer = user_json['data']['transfer']
     print('Left transfer:', transfer)
     
-    transfer_mb = int(transfer) / 1024 / 1024
+    transfer_mb = round(int(transfer) / 1024 / 1024, 2)
 
     # 输出用户信息
-    用户信息 = f"剩余流量: {transfer_mb}\n"
-    print(f"剩余流量: {transfer_mb}")
+    用户信息 = f"剩余流量: {transfer_mb} MB\n"
+    print(f"剩余流量: {transfer_mb} MB")
 
     return 用户信息
 
